@@ -29,6 +29,7 @@ def get_valid_start_amount():
     """
     Continuously prompting the user to enter a starting deposit amount until a valid amount 
     ranging between 1,000 and 1,500,000 is inputted.
+    The limitation is based on https://www.bendigobank.com.au/calculators/deposit-and-savings/
     """
     while True:
         try:
@@ -68,6 +69,7 @@ def get_valid_investment_term():
     """
     Continuously prompting the user to enter the total number of years and months of the investment period 
     until valid months ranging from 3 months to 60 months is inputted and returns the total number of years.
+    The limitation is based on https://www.bendigobank.com.au/calculators/deposit-and-savings/
     """
     while True:
         years = get_investment_term_years()
